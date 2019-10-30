@@ -6,7 +6,7 @@
   - name: Copy Apache configuration file
     copy:
       src: httpd2.conf
-      dest: /etc/httpd/conf/
+      dest: /etc/httpd/conf/httpd.conf
     notify:
         - restart_apache
   handlers:
